@@ -16,7 +16,7 @@ clutter found in real projects.
 ----
 1.  To begin, open your terminal, and enter the following command to change 
     directory to the exercise folder.
----- cd /Users/tekrimal/exercise
+----
 
 $ cd ~/workspace/exercises/m1-w1d1-intro-to-tools-exercises/java-helloworld
 
@@ -61,14 +61,17 @@ ls -la
     Exercise 4 represent?
 ----
 
-<type or copy-paste your answer here>
-
+"." refers to current directory whereas ".." refers to one directory before the current directory.
 ----
 6.  What are the names of the files, including any dot-files, displayed in the
     directory listing in Exercise 4?
 ----
 
-<type or copy-paste your answer here>
+<drwxr-xr-x   5 tekrimal  staff  170 Sep 17 15:30 .
+drwxr-xr-x+ 29 tekrimal  staff  986 Sep 17 15:22 ..
+drwxr-xr-x  13 tekrimal  staff  442 Sep 17 16:09 .git
+-rw-r--r--   1 tekrimal  staff  728 Sep 17 15:30 .gitignore
+drwxr-xr-x   4 tekrimal  staff  136 Sep 17 15:30 01-intro-to-tools-exercises>
 
 
 ----
@@ -76,7 +79,11 @@ ls -la
     the directory listing in Exercise 4?
 ----
 
-<type or copy-paste your answer here>
+<trwxr-xr-x   5 tekrimal  staff  170 Sep 17 15:30 ./
+drwxr-xr-x+ 29 tekrimal  staff  986 Sep 17 15:22 ../
+drwxr-xr-x  13 tekrimal  staff  442 Sep 17 16:09 .git/
+-rw-r--r--   1 tekrimal  staff  728 Sep 17 15:30 .gitignore
+drwxr-xr-x   4 tekrimal  staff  136 Sep 17 15:30 01-intro-to-tools-exercises/>
 
 
 ----
