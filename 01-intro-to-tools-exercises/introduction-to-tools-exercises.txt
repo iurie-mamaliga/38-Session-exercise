@@ -166,8 +166,8 @@ along, and then at the end.
 ----
 
 $ cd src/main/java/com/techelevator
-$ <enter command to display present working directory>
-<type or copy-paste your present working directory here>
+$ <pwd>
+<Techelevators-MacBook-Air-69:techelevator tekrimal$ >
 
 
 ----
@@ -175,16 +175,19 @@ $ <enter command to display present working directory>
     path?
 ----
 
-<type your answer here>
+<absolute>
 
 
 ----
 12. List all the files and folders, including any dot-files or dot-folders in
     your present working directory.
 ----
-
-$ <enter command to list all files and folders including dot-files and dot-folders>
-<type or copy-paste the result here>
+Helloworld.java
+$ <ls la
+ls laF>
+<drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:17 .
+drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:16 ..
+-rwxr-xr-x  1 tekrimal  staff  141 Sep 17 15:30 Helloworld.java
 
 
 ----
@@ -198,8 +201,12 @@ $ cp Helloworld.java Helloworld.java.backup
 The "cp" parameters are the name of the source file followed by the name of the 
 destination file. 
 
-$ <enter command to list all files and folders in order to confirm the creation of the backup file>
-<type or copy-paste the result here>
+$ <ls la
+ls laF>
+<drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:17 .
+drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:16 ..
+-rwxr-xr-x  1 tekrimal  staff  141 Sep 17 15:30 Helloworld.java
+-rwxr-xr-x  1 tekrimal  staff  141 Sep 17 17:00 helloworld.java.backup>
 
 
 ----    
@@ -212,32 +219,13 @@ $ mv Helloworld.java.backup Helloworld.java.copy
 The "mv" parameters are the existing name of the file followed by the new name 
 of the file. 
 
-$ <Techelevators-MacBook-Air-69:exercises tekrimal$ cd 01-intro-to-tools-exercises
-Techelevators-MacBook-Air-69:01-intro-to-tools-exercises tekrimal$ ls
-introduction-to-tools-exercises.txt	java-helloworld
-Techelevators-MacBook-Air-69:01-intro-to-tools-exercises tekrimal$ cd java-helloworld
-Techelevators-MacBook-Air-69:java-helloworld tekrimal$ ls
-database	pom.xml		src		target
-Techelevators-MacBook-Air-69:java-helloworld tekrimal$ cd src
-Techelevators-MacBook-Air-69:src tekrimal$ ls
-main	test
-Techelevators-MacBook-Air-69:src tekrimal$ cd main
-Techelevators-MacBook-Air-69:main tekrimal$ ls
-java		resources
-Techelevators-MacBook-Air-69:main tekrimal$ cd java
-Techelevators-MacBook-Air-69:java tekrimal$ ls
-com
-Techelevators-MacBook-Air-69:java tekrimal$ cd com
-Techelevators-MacBook-Air-69:com tekrimal$ ls
-techelevator
-Techelevators-MacBook-Air-69:com tekrimal$ cd techelevator
-Techelevators-MacBook-Air-69:techelevator tekrimal$ ls
-Helloworld.java
-Techelevators-MacBook-Air-69:techelevator tekrimal$ cp helloworld.java helloworld.java.backup
-Techelevators-MacBook-Air-69:techelevator tekrimal$ >
-<Techelevators-MacBook-Air-69:techelevator tekrimal$ cp helloworld.java helloworld.java.backup
+$ <Techelevators-MacBook-Air-69:techelevator tekrimal$ cd /o1-intro-to-tool-exercise/java-helloworld/src/main/java/com/techelevator
+-bash: cd: /o1-intro-to-tool-exercise/java-helloworld/src/main/java/com/techelevator: No such file or directory
 Techelevators-MacBook-Air-69:techelevator tekrimal$ ls
 Helloworld.java		helloworld.java.backup
+Techelevators-MacBook-Air-69:techelevator tekrimal$ mv helloworld.java.backup helloworld.java.copy
+Techelevators-MacBook-Air-69:techelevator tekrimal$ ls
+Helloworld.java		helloworld.java.copy
 Techelevators-MacBook-Air-69:techelevator tekrimal$ >
 
 
@@ -246,17 +234,75 @@ Techelevators-MacBook-Air-69:techelevator tekrimal$ >
     commit to the local repository, but also push it up to BitBucket. 
 ----
 
-$ <enter the Git command to display status>
-<type or copy-paste the result here>
+$ <Techelevators-MacBook-Air-69:techelevator tekrimal$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
-$ <enter the Git command to "stage" all changes>
-<type or copy-paste the result here>
+	modified:   ../../../../../../introduction-to-tools-exercises.txt
 
-$ <enter the Git command to save all "staged" changes>
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	helloworld.java.backup
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Techelevators-MacBook-Air-69:techelevator tekrimal$ 
+>
+<Techelevators-MacBook-Air-69:techelevator tekrimal$ git add -A
+Techelevators-MacBook-Air-69:techelevator tekrimal$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   ../../../../../../introduction-to-tools-exercises.txt
+	new file:   helloworld.java.backup
+
+Techelevators-MacBook-Air-69:techelevator tekrimal$ git commit -m "Answered all questions until #15"
+[master 28bc053] Answered all questions until #15
+ 2 files changed, 54 insertions(+), 5 deletions(-)
+ create mode 100755 01-intro-to-tools-exercises/java-helloworld/src/main/java/com/techelevator/helloworld.java.backup
+Techelevators-MacBook-Air-69:techelevator tekrimal$ git push origin master
+>
+
+$ <git commit -Air>
+<Techelevators-MacBook-Air-69:techelevator tekrimal$ git add -A
+Techelevators-MacBook-Air-69:techelevator tekrimal$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   ../../../../../../introduction-to-tools-exercises.txt
+	new file:   helloworld.java.backup
+
+Techelevators-MacBook-Air-69:techelevator tekrimal$ git commit -m "Answered all questions until #15"
+[master 28bc053] Answered all questions until #15
+ 2 files changed, 54 insertions(+), 5 deletions(-)
+ create mode 100755 01-intro-to-tools-exercises/java-helloworld/src/main/java/com/techelevator/helloworld.java.backup
+Techelevators-MacBook-Air-69:techelevator tekrimal$ git push origin master
+>
+
+$ <git push origin master>
 <type or copy-paste the result here>
 
 $ git push origin master
-<type or copy-paste the result here>
+<Techelevators-MacBook-Air-69:techelevator tekrimal$ git push origin master
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 1.72 KiB | 0 bytes/s, done.
+Total 14 (delta 5), reused 0 (delta 0)
+To https://bitbucket.org/te-pgh-cohort-1/TekRimal-java-exercises
+   646e043..28bc053  master -> master
+Techelevators-MacBook-Air-69:techelevator tekrimal$ 
+>
 
 
 ----
