@@ -129,13 +129,28 @@ You are encouraged to make "less" part of your standard command line toolkit.
 Did you remember to save "m1-introduction-to-tools-exercise.txt"?
 
 $ git status
-<type or copy-paste the result here>
+<Techelevators-MacBook-Air-69:exercises tekrimal$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   01-intro-to-tools-exercises/introduction-to-tools-exercises.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Techelevators-MacBook-Air-69:exercises tekrimal$ 
+>
 
 $ git add -A
-<type or copy-paste the result here>
+<Techelevators-MacBook-Air-69:exercises tekrimal$ git add -A
+Techelevators-MacBook-Air-69:exercises tekrimal$ >
 
 $ git commit -m "Good stopping point"
-<type or copy-paste the result here>
+<Techelevators-MacBook-Air-69:exercises tekrimal$ git commit -m "Answered question #7"
+[master 7ba3247] Answered question #7
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Techelevators-MacBook-Air-69:exercises tekrimal$ >
 
 Note, you do not need to push this commit up to BitBucket at this time. The
 typical Git workflow is to make many small commits to your local repo while 
@@ -197,8 +212,33 @@ $ mv Helloworld.java.backup Helloworld.java.copy
 The "mv" parameters are the existing name of the file followed by the new name 
 of the file. 
 
-$ <enter command to list all files and folders in order to confirm the renaming of the file>
-<type or copy-paste the result here>
+$ <Techelevators-MacBook-Air-69:exercises tekrimal$ cd 01-intro-to-tools-exercises
+Techelevators-MacBook-Air-69:01-intro-to-tools-exercises tekrimal$ ls
+introduction-to-tools-exercises.txt	java-helloworld
+Techelevators-MacBook-Air-69:01-intro-to-tools-exercises tekrimal$ cd java-helloworld
+Techelevators-MacBook-Air-69:java-helloworld tekrimal$ ls
+database	pom.xml		src		target
+Techelevators-MacBook-Air-69:java-helloworld tekrimal$ cd src
+Techelevators-MacBook-Air-69:src tekrimal$ ls
+main	test
+Techelevators-MacBook-Air-69:src tekrimal$ cd main
+Techelevators-MacBook-Air-69:main tekrimal$ ls
+java		resources
+Techelevators-MacBook-Air-69:main tekrimal$ cd java
+Techelevators-MacBook-Air-69:java tekrimal$ ls
+com
+Techelevators-MacBook-Air-69:java tekrimal$ cd com
+Techelevators-MacBook-Air-69:com tekrimal$ ls
+techelevator
+Techelevators-MacBook-Air-69:com tekrimal$ cd techelevator
+Techelevators-MacBook-Air-69:techelevator tekrimal$ ls
+Helloworld.java
+Techelevators-MacBook-Air-69:techelevator tekrimal$ cp helloworld.java helloworld.java.backup
+Techelevators-MacBook-Air-69:techelevator tekrimal$ >
+<Techelevators-MacBook-Air-69:techelevator tekrimal$ cp helloworld.java helloworld.java.backup
+Techelevators-MacBook-Air-69:techelevator tekrimal$ ls
+Helloworld.java		helloworld.java.backup
+Techelevators-MacBook-Air-69:techelevator tekrimal$ >
 
 
 ----
