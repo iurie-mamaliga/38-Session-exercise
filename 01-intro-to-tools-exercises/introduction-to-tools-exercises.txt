@@ -38,7 +38,7 @@ HOME
 ----
 
 $ pwd
-<type or copy-paste the result here>
+ls -la
 
 The present working directory displayed should match the directory you changed 
 to in Exercise 1.  Note, the two may not match at the very beginning if you
@@ -53,9 +53,8 @@ changes directory, and the "pwd" command reflects this.
     "long format" flags for the "ls" command.
 ----
 
-$ ls -la
-<type or copy-paste the result here>
 
+ls -la
 
 ----
 5.  What do the "." and ".." folders displayed in the directory listing in
