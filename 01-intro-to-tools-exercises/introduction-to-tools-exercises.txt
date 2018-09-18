@@ -232,105 +232,43 @@ Helloworld.java		Helloworld.java.copy >
 
 $ <Techelevators-MacBook-Air-69:techelevator tekrimal$ git status
 On branch master
-Your branch is up-to-date with 'origin/master'.
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
 Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
+  (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
 	modified:   ../../../../../../introduction-to-tools-exercises.txt
-	deleted:    helloworld.java.backup
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	helloworld.java.copy
+	Helloworld.java.copy
 
-no changes added to commit (use "git add" and/or "git commit -a")
-Techelevators-MacBook-Air-69:techelevator tekrimal$ 
+no changes added to commit (use "git add" and/or "git commit -a")>
 
-<Techelevators-MacBook-Air-69:techelevator tekrimal$ git commit -A
-error: unknown switch `A'
-usage: git commit [<options>] [--] <pathspec>...
-
-    -q, --quiet           suppress summary after successful commit
-    -v, --verbose         show diff in commit message template
-
-Commit message options
-    -F, --file <file>     read message from file
-    --author <author>     override author for commit
-    --date <date>         override date for commit
-    -m, --message <message>
-                          commit message
-    -c, --reedit-message <commit>
-                          reuse and edit message from specified commit
-    -C, --reuse-message <commit>
-                          reuse message from specified commit
-    --fixup <commit>      use autosquash formatted message to fixup specified commit
-    --squash <commit>     use autosquash formatted message to squash specified commit
-    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
-    -s, --signoff         add Signed-off-by:
-    -t, --template <file>
-                          use specified template file
-    -e, --edit            force edit of commit
-    --cleanup <default>   how to strip spaces and #comments from message
-    --status              include status in commit message template
-    -S, --gpg-sign[=<key-id>]
-                          GPG sign commit
-
-Commit contents options
-    -a, --all             commit all changed files
-    -i, --include         add specified files to index for commit
-    --interactive         interactively add files
-    -p, --patch           interactively add changes
-    -o, --only            commit only specified files
-    -n, --no-verify       bypass pre-commit and commit-msg hooks
-    --dry-run             show what would be committed
-    --short               show status concisely
-    --branch              show branch information
-    --porcelain           machine-readable output
-    --long                show status in long format (default)
-    -z, --null            terminate entries with NUL
-    --amend               amend previous commit
-    --no-post-rewrite     bypass post-rewrite hook
-    -u, --untracked-files[=<mode>]
-                          show untracked files, optional modes: all, normal, no. (Default: all)
-
-
->
-
-$ <git commit -Air>
 <Techelevators-MacBook-Air-69:techelevator tekrimal$ git add -A
-Techelevators-MacBook-Air-69:techelevator tekrimal$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
+Techelevators-MacBook-Air-69:techelevator tekrimal$>
 
-	modified:   ../../../../../../introduction-to-tools-exercises.txt
-	new file:   helloworld.java.backup
 
-Techelevators-MacBook-Air-69:techelevator tekrimal$ git commit -m "Answered all questions until #15"
-[master 28bc053] Answered all questions until #15
- 2 files changed, 54 insertions(+), 5 deletions(-)
- create mode 100755 01-intro-to-tools-exercises/java-helloworld/src/main/java/com/techelevator/helloworld.java.backup
-Techelevators-MacBook-Air-69:techelevator tekrimal$ git push origin master
+
+
+$ <gTechelevators-MacBook-Air-69:techelevator tekrimal$ git commit -m "Made some changes to answers."
+[master dce74cf] Made some changes to answers.
+ 2 files changed, 29 insertions(+), 26 deletions(-)
+ create mode 100755 01-intro-to-tools-exercises/java-helloworld/src/main/java/com/techelevator/Helloworld.java.copy
 >
 
 $ <git push origin master>
-<type or copy-paste the result here>
-
-$ git push origin master
 <Techelevators-MacBook-Air-69:techelevator tekrimal$ git push origin master
 Counting objects: 14, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (12/12), done.
-Writing objects: 100% (14/14), 1.72 KiB | 0 bytes/s, done.
+Writing objects: 100% (14/14), 1.70 KiB | 0 bytes/s, done.
 Total 14 (delta 5), reused 0 (delta 0)
 To https://bitbucket.org/te-pgh-cohort-1/TekRimal-java-exercises
-   646e043..28bc053  master -> master
-Techelevators-MacBook-Air-69:techelevator tekrimal$ 
->
+   cb86e74..dce74cf  master -> master>
+
 
 
 ----
@@ -341,8 +279,11 @@ $ rm Helloworld.java.copy
 
 The "rm" parameter is the name of the file to be deleted.
 
-$ <ls laF>
-<type or copy-paste the result here>
+$ <ls -la>
+<ttotal 8
+drwxr-xr-x  3 tekrimal  staff  102 Sep 17 20:44 .
+drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:16 ..
+-rwxr-xr-x  1 tekrimal  staff  141 Sep 17 15:30 Helloworld.java>
 
 
 ----
@@ -364,8 +305,9 @@ command line when that seems natural.
 
 Regardless of the option you chose, check your new location.
 
-$ <enter command to display present working directory>
-<type or copy-paste your present working directory here>
+$ <pwd>
+</Users/tekrimal/exercises/01-intro-to-tools-exercises/java-helloworld
+Techelevators-MacBook-Air-69:java-helloworld tekrimal$ >
 
 
 ----
@@ -374,9 +316,10 @@ $ <enter command to display present working directory>
 ----
 
 $ mkdir docs
-$ <enter the command to change directory to "docs" using a relative path>
-$ <enter command to display present working directory>
-<type or copy-paste your present working directory here>
+$ <cd docs>
+$ <pwd>
+</Users/tekrimal/exercises/01-intro-to-tools-exercises/java-helloworld/docs
+Techelevators-MacBook-Air-69:docs tekrimal$ >
 
 ----
 19. Create a new file name "readme.txt" using Visual Studio Code, and add the text
