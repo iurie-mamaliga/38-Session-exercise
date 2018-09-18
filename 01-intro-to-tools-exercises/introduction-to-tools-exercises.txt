@@ -131,28 +131,24 @@ You are encouraged to make "less" part of your standard command line toolkit.
 Did you remember to save "m1-introduction-to-tools-exercise.txt"?
 
 $ git status
-<Techelevators-MacBook-Air-69:exercises tekrimal$ git status
-On branch master
+<On branch master
 Your branch is up-to-date with 'origin/master'.
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   01-intro-to-tools-exercises/introduction-to-tools-exercises.txt
+	modified:   ../introduction-to-tools-exercises.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-Techelevators-MacBook-Air-69:exercises tekrimal$ 
 >
 
 $ git add -A
-<Techelevators-MacBook-Air-69:exercises tekrimal$ git add -A
-Techelevators-MacBook-Air-69:exercises tekrimal$ >
+<Techelevators-MacBook-Air-69:java-helloworld tekrimal$ git add -A
+Techelevators-MacBook-Air-69:java-helloworld tekrimal$  >
 
 $ git commit -m "Good stopping point"
-<Techelevators-MacBook-Air-69:exercises tekrimal$ git commit -m "Answered question #7"
-[master 7ba3247] Answered question #7
- 1 file changed, 1 insertion(+), 1 deletion(-)
-Techelevators-MacBook-Air-69:exercises tekrimal$ >
+<T[master 66e5007] Did some tweeks after reading the questions carefully.
+ 1 file changed, 15 insertions(+), 13 deletions(-) >
 
 Note, you do not need to push this commit up to BitBucket at this time. The
 typical Git workflow is to make many small commits to your local repo while 
@@ -184,12 +180,13 @@ $ <pwd>
 12. List all the files and folders, including any dot-files or dot-folders in
     your present working directory.
 ----
-Helloworld.java
-$ <ls la
-ls laF>
-<drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:17 .
+ls -F
+<Helloworld.java>
+$ <ls -la
+<dtotal 8
+drwxr-xr-x  3 tekrimal  staff  102 Sep 17 17:36 .
 drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:16 ..
--rwxr-xr-x  1 tekrimal  staff  141 Sep 17 15:30 Helloworld.java
+-rwxr-xr-x  1 tekrimal  staff  141 Sep 17 15:30 Helloworld.java>
 
 
 ----
@@ -203,12 +200,14 @@ $ cp Helloworld.java Helloworld.java.backup
 The "cp" parameters are the name of the source file followed by the name of the 
 destination file. 
 
-$ <ls la
-ls laF>
-<drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:17 .
+$ <ls -F
+Helloworld.java		Helloworld.java.backup>
+<ls -la
+total 16
+drwxr-xr-x  4 tekrimal  staff  136 Sep 17 20:32 .
 drwxr-xr-x  4 tekrimal  staff  136 Sep 17 17:16 ..
 -rwxr-xr-x  1 tekrimal  staff  141 Sep 17 15:30 Helloworld.java
--rwxr-xr-x  1 tekrimal  staff  141 Sep 17 17:00 helloworld.java.backup>
+-rwxr-xr-x  1 tekrimal  staff  141 Sep 17 20:32 Helloworld.java.backup>
 
 
 ----    
@@ -221,14 +220,9 @@ $ mv Helloworld.java.backup Helloworld.java.copy
 The "mv" parameters are the existing name of the file followed by the new name 
 of the file. 
 
-$ <Techelevators-MacBook-Air-69:techelevator tekrimal$ cd /o1-intro-to-tool-exercise/java-helloworld/src/main/java/com/techelevator
--bash: cd: /o1-intro-to-tool-exercise/java-helloworld/src/main/java/com/techelevator: No such file or directory
+$ <Techelevators-MacBook-Air-69:techelevator tekrimal$ mv Helloworld.java.backup Helloworld.java.copy
 Techelevators-MacBook-Air-69:techelevator tekrimal$ ls
-Helloworld.java		helloworld.java.backup
-Techelevators-MacBook-Air-69:techelevator tekrimal$ mv helloworld.java.backup helloworld.java.copy
-Techelevators-MacBook-Air-69:techelevator tekrimal$ ls
-Helloworld.java		helloworld.java.copy
-Techelevators-MacBook-Air-69:techelevator tekrimal$ >
+Helloworld.java		Helloworld.java.copy >
 
 
 ----
