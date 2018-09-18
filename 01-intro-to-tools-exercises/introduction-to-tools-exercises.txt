@@ -38,7 +38,7 @@ HOME
 ----
 
 $ pwd
-ls -la
+
 
 The present working directory displayed should match the directory you changed 
 to in Exercise 1.  Note, the two may not match at the very beginning if you
@@ -55,35 +55,37 @@ changes directory, and the "pwd" command reflects this.
 
 
 ls -la
+ls -F
 
 ----
 5.  What do the "." and ".." folders displayed in the directory listing in
     Exercise 4 represent?
 ----
 
-"." refers to current directory we are working on whereas ".." refers to one directory before the current directory.
+"." refers to current directory whereas ".." refers to paarent/enclosing directory.
 ----
 6.  What are the names of the files, including any dot-files, displayed in the
     directory listing in Exercise 4?
 ----
 
-<drwxr-xr-x   5 tekrimal  staff  170 Sep 17 15:30 .
-drwxr-xr-x+ 29 tekrimal  staff  986 Sep 17 15:22 ..
-drwxr-xr-x  13 tekrimal  staff  442 Sep 17 16:09 .git
--rw-r--r--   1 tekrimal  staff  728 Sep 17 15:30 .gitignore
-drwxr-xr-x   4 tekrimal  staff  136 Sep 17 15:30 01-intro-to-tools-exercises>
-
+total 40
+drwxr-xr-x  10 tekrimal  staff   340 Sep 17 16:54 .
+drwxr-xr-x   5 tekrimal  staff   170 Sep 17 16:53 ..
+-rw-r--r--@  1 tekrimal  staff  6148 Sep 17 16:59 .DS_Store
+-rw-r--r--   1 tekrimal  staff  2211 Sep 17 16:54 .classpath
+-rw-r--r--   1 tekrimal  staff   542 Sep 17 16:54 .project
+drwxr-xr-x   5 tekrimal  staff   170 Sep 17 16:54 .settings
+drwxr-xr-x   3 tekrimal  staff   102 Sep 17 15:30 database
+-rwxr-xr-x   1 tekrimal  staff  1094 Sep 17 15:30 pom.xml
+drwxr-xr-x   5 tekrimal  staff   170 Sep 17 16:59 src
+drwxr-xr-x   5 tekrimal  staff   170 Sep 17 16:59 target
 
 ----
 7.  What are the names of the folders, including any dot-folders, displayed in 
     the directory listing in Exercise 4?
 ----
 
-<trwxr-xr-x   5 tekrimal  staff  170 Sep 17 15:30 ./
-drwxr-xr-x+ 29 tekrimal  staff  986 Sep 17 15:22 ../
-drwxr-xr-x  13 tekrimal  staff  442 Sep 17 16:09 .git/
--rw-r--r--   1 tekrimal  staff  728 Sep 17 15:30 .gitignore
-drwxr-xr-x   4 tekrimal  staff  136 Sep 17 15:30 01-intro-to-tools-exercises/>
+database/	pom.xml*	src/		target/
 
 
 ----
