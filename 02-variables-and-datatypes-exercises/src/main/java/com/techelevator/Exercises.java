@@ -477,16 +477,20 @@ public class Exercises {
         */
         /*converting 2.15 hours in minutes gives 129 minutes and converting 1.90 hours in minutes gives 114 minutes. Area of a room = 12 X 14 = 168 */
         double areaOfOneRoom = 168;
+        double areaOfFiveRooms = 168*5;
+        double areaOf623Rooms = areaOfOneRoom*623;
         double billsRatePerRoom = 2.15;
         double billsRatePerHour = areaOfOneRoom / billsRatePerRoom;
         double jillsRatePerRoom = 1.90;
         double jillsRatePerHour = areaOfOneRoom/jillsRatePerRoom;
         double workDoneInOneHour = billsRatePerHour + jillsRatePerHour;
-        double timeNeededToPaintOneRoomByTwo = areaOfOneRoom/workDoneInOneHour;
-        double timeNeededToCompleteFiveRooms = timeNeededToPaintOneRoomByTwo*5;
-        double timeNeededToPaint623Rooms = timeNeededToPaintOneRoomByTwo*623;
+        double timeNeededToCompleteFiveRooms = areaOfFiveRooms/workDoneInOneHour;
+        double rateOfWorkPerDay = workDoneInOneHour *8;
+        double timeNeededToPaint623Rooms = areaOf623Rooms/workDoneInOneHour;
+        double numberOfDays = timeNeededToPaint623Rooms/8;
         System.out.println(timeNeededToCompleteFiveRooms);
-        System.out.println(timeNeededToPaint623Rooms);
+        System.out.println(numberOfDays);
+        
         
         
         
