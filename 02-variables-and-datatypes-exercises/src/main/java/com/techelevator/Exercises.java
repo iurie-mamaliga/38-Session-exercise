@@ -485,7 +485,6 @@ public class Exercises {
         double jillsRatePerHour = areaOfOneRoom/jillsRatePerRoom;
         double workDoneInOneHour = billsRatePerHour + jillsRatePerHour;
         double timeNeededToCompleteFiveRooms = areaOfFiveRooms/workDoneInOneHour;
-        double rateOfWorkPerDay = workDoneInOneHour *8;
         double timeNeededToPaint623Rooms = areaOf623Rooms/workDoneInOneHour;
         double numberOfDays = timeNeededToPaint623Rooms/8;
         System.out.println(timeNeededToCompleteFiveRooms);
