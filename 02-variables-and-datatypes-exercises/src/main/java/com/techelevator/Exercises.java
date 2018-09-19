@@ -475,7 +475,21 @@ public class Exercises {
         Hint: Calculate the hourly rate for each painter, combine them, and then divide the total walls in feet by the combined hourly rate of the painters.
         Challenge: How many days will it take the pair to paint 623 rooms assuming they work 8 hours a day?.
         */
-
+        /*converting 2.15 hours in minutes gives 129 minutes and converting 1.90 hours in minutes gives 114 minutes. Area of a room = 12 X 14 = 168 */
+        double areaOfOneRoom = 168;
+        double billsRatePerRoom = 2.15;
+        double billsRatePerHour = areaOfOneRoom / billsRatePerRoom;
+        double jillsRatePerRoom = 1.90;
+        double jillsRatePerHour = areaOfOneRoom/jillsRatePerRoom;
+        double workDoneInOneHour = billsRatePerHour + jillsRatePerHour;
+        double timeNeededToPaintOneRoomByTwo = areaOfOneRoom/workDoneInOneHour;
+        double timeNeededToCompleteFiveRooms = timeNeededToPaintOneRoomByTwo*5;
+        double timeNeededToPaint623Rooms = timeNeededToPaintOneRoomByTwo*623;
+        System.out.println(timeNeededToCompleteFiveRooms);
+        System.out.println(timeNeededToPaint623Rooms);
+        
+        
+        
         /*
         Create and assign variables to hold your first name, last name, and middle initial. Using concatenation,
         build an additional variable to hold your full name in the order of last name, first name, middle initial. The
@@ -483,7 +497,12 @@ public class Exercises {
         with a period.
         Example: "Hopper, Grace B." 
         */
-
+        String firstName = "Juan";
+        String lastName = "Escobar";
+        	String middleInitial = "K";
+        String fullName = lastName + "," + " " + firstName + " " + middleInitial + ".";
+		System.out.println(fullName);
+        
         /*
         The distance between New York and Chicago is 800 miles, and the train has already travelled 537 miles. 
         What percentage of the trip has been completed?
@@ -491,6 +510,10 @@ public class Exercises {
         Challenge: Display as an integer value between 0 and 100 using casts.
         */
        
+        int totalDistance = 800;
+        double distanceTravelled = 537;
+        int percentCompleted = (int)(distanceTravelled/totalDistance*100);
+        System.out.println(percentCompleted);
         
             
 	}
