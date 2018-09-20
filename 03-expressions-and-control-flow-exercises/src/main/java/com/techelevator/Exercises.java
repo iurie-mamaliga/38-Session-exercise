@@ -605,22 +605,22 @@ public class Exercises {
 	 */
 	public int loneSum(int a, int b, int c) {
 		
-		if(a == b && b ==c) 
+		if(a == b && b ==c) { 
 			return 0;
-			
-		if(a == b) 
+		}	
+		if(a == b) { 
 			return c;
-			
-		if(b == c) 
+		}
+		if(b == c) {
 			return a;
 			
-		if(a == c)
+		}if(a == c) {
 			return b;
-		else
+	}else {
 		
 		return (a + b + c);
 	}
-
+}
 	/*
 	 35. Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not 
 	 count towards the sum and values to its immediate right do not count. So for example, if b is 13, then both 
@@ -632,20 +632,21 @@ public class Exercises {
 	 luckySum(13, 13, 3) → 0
 	 */
 	public int luckySum(int a, int b, int c) {
-		if((a ==13 && b == 13) || (a == 13 && c == 13) || (a ==13 && b ==13 && c == 13)) 
+		if((a ==13 && b == 13) || (a == 13 && c == 13) || (a ==13 && b ==13 && c == 13)) {
 			return 0;
 			
-		 if (b ==13) 
+		}if (b ==13) {
 			return a;
 		 
-		 if(c ==13) 
+		}if(c ==13) {
 			return (a +b);
 		 
-		 if (a == 13)
+		} if (a == 13)  {
 			 return c;
 		 
-		 else
+		}else  {
 		return (a + b + c);
+		}
 	}
 }
 
