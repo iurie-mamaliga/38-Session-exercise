@@ -163,12 +163,22 @@ public class Exercises {
 	 */
 	public int sum13(int[] nums) {
 		int sums = 0;
-		for(int i = 0; i< nums.length; i++) 
+		if(nums.length == 0) {
+			return sums;
+		} else {
+		for(int i = 0; i< nums.length; i++) {
 			if(nums[i] != 13) {
 				sums += nums[i];
+			} else if (nums[i] == 13 && i <nums.length-1) {
+				nums[i] = 0;
+				nums[i + 1] =0;
 			}
-		return sums;
+		}
 	}
+		return sums; 
+		}
+		
+
 
 	/*
 	 13. Given an array of ints, return true if the array contains a 2 next to a 2 somewhere.
