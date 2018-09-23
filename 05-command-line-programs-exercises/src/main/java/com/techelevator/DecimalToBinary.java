@@ -14,9 +14,54 @@ Please enter in a series of decimal values (separated by spaces): 460 8218 1 313
 31313 in binary is 111101001010001
 987654321 in binary is 111010110111100110100010110001
 */
+
+import java.util.Scanner;
+
 public class DecimalToBinary {
 
 	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		String userInput;
+
+		System.out.print("Please enter in a series of decimal values (seperated by spaces) --> ");
+		userInput = input.nextLine();
+
+		String[] yourNumbers = userInput.split(" ");
+		for (int i = 0; i < yourNumbers.length; i++) {
+
+			int number = Integer.parseInt(yourNumbers[i]);
+
+			
+			int consoleLength = 1;  	// Assigns the length of console to minimum 1 digit and it increases according to the
+										// input value because of for loop.
+
+			
+			while (consoleLength <= number / 2) {
+				consoleLength *= 2;					//This code according to conversion.
+			}
+						
+			
+			while (consoleLength > 0) {
+				
+				//To get 0 value of binary number
+
+				if (number < consoleLength) {
+					System.out.print(0);
+				}
+				
+				//To get 1 value of binary number
+
+				else {
+					System.out.print(1);
+					number -= consoleLength;
+				}
+
+				consoleLength /= 2; //This code prevents from becoming infinite console length.
+			}
+
+			System.out.println();		//Prints the result of different numbers in seperate lines.
+		}
 
 	}
 

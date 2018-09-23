@@ -16,10 +16,35 @@ package com.techelevator;
  58f is 17m.
  */
 
+import java.util.Scanner;
+
 public class LinearConvert {
 
 	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
 
+		String length;
+		char unit;
+
+		System.out.print("Please enter the unit to be converted : ");
+
+		length = input.nextLine();
+		double userInput = Double.parseDouble(length);
+
+		System.out.print("Is the length in (M)eter or (F)oot? Please type lowercase'm' or 'f' : ");
+
+		unit = input.next().charAt(0);
+
+		double meter = userInput * 0.3048;
+		double feet = (userInput * 3.2808399);
+		if (unit == 'f') {
+			System.out.println(userInput + " " + "F" + " " + "is equal to" + " " + meter + " " + "M");
+		} else if (unit == 'm') {
+			System.out.println(userInput + " " + "M" + " " + "is equal to" + " " + feet + " " + "F");
+		} else {
+			System.out.print(
+					"Please enter valid unit. THANK YOU!");
+		}
 	}
-
 }
