@@ -38,7 +38,7 @@ public class DecimalToBinary {
 
 			
 			while (consoleLength <= number / 2) {
-				consoleLength *= 2;					//This code according to conversion.
+				consoleLength =consoleLength* 2;					//This code does to conversion.
 			}
 						
 			
@@ -46,7 +46,7 @@ public class DecimalToBinary {
 				
 				//To get 0 value of binary number
 
-				if (number < consoleLength) {
+			if (number < consoleLength) {
 					System.out.print(0);
 				}
 				
@@ -54,13 +54,13 @@ public class DecimalToBinary {
 
 				else {
 					System.out.print(1);
-					number -= consoleLength;
-				}
+					number = number- consoleLength;
+				} 
 
-				consoleLength /= 2; //This code prevents from becoming infinite console length.
+				consoleLength=consoleLength / 2; // Determines the length of console.
 			}
 
-			System.out.println();		//Prints the result of different numbers in seperate lines.
+			System.out.println();		//Prints the result of different numbers in separate lines.
 		}
 
 	}
