@@ -14,7 +14,6 @@ Please enter the Fibonacci number: 25
  
  0, 1, 1, 2, 3, 5, 8, 13, 21
  */
-  
 
 import java.util.Scanner;
 
@@ -23,13 +22,11 @@ public class Fibonacci {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		String userInput;
 
 		System.out.print("Please enter a number here --> ");
-		userInput = input.nextLine();
-		Integer number = Integer.parseInt(userInput);
+		int userInput = input.nextInt();
 
-		long num0, num1, num2;
+		int num0=0, num1=1, num2;
 
 		/*
 		 * Since the first two indices are constants, making the reference to those two
@@ -37,14 +34,14 @@ public class Fibonacci {
 		 * input value, so a third value is necessary to satisfy the condition.
 		 */
 
-		for (num0 = 0, num1 = 1, num2 = 0; num2 <= number; num2 = num0 + num1) {
+		for (num0 = 0, num1 = 1, num2 = 0; num2 <= userInput; num2 = num0 + num1) {
 
 			num0 = num1;
 			num1 = num2;
 
-			System.out.print(" " + num2);
+			System.out.print(num2 + " ");
 
 		}
-	}
 
+	}
 }

@@ -27,31 +27,39 @@ public class TempConvert {
 
 		Scanner input = new Scanner(System.in);
 
-		String temperature;
-		char unit;
-
 		System.out.print("Please enter the temperature to be converted : ");
 
-		temperature = input.nextLine();
-		double userInput = Double.parseDouble(temperature);
+		 double userInput= input.nextDouble();
+	
+		System.out.print("Is the temperature in (C)elcius or (F)arenheit? Please type lowercase'c' or 'f' : ");
 
-		System.out.print("Is the temperature in (C)elcius or (F)arenheit?please type lowercase'c' or 'f' : ");
-
-		unit = input.next().charAt(0);
+		char unit = input.next().charAt(0);
 		/*
-		 * As the calculation follows PEMDAS 32 must be subtracted from farenheit value
+		 * As the calculation follows PEMDAS rule 32 must be subtracted from farenheit value
 		 * before dividing by 1.8.
 		 */
 
 		double farenheit = userInput * 1.8 + 32;
 		double celcius = (userInput - 32) / 1.8;
+
 		if (unit == 'c') {
+			
+			farenheit  *= 100;
+			int say = (int) farenheit;
+			farenheit = say/100.0;
+			
 			System.out.println(userInput + " " + "C" + " " + "is equal to" + " " + farenheit + " " + "F");
+
 		} else if (unit == 'f') {
+			
+			celcius *= 100;
+			int let = (int) celcius;
+			celcius = let/100.0;
+			
 			System.out.println(userInput + " " + "F" + " " + "is equal to" + " " + celcius + " " + "C");
+
 		} else {
-			System.out.print(
-					"Please enter valid unit. THANK YOU!");
+			System.out.println("Please enter a valid unit. THANK YOU!");
 		}
 	}
 }
