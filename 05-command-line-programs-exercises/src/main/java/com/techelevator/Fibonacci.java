@@ -29,7 +29,7 @@ public class Fibonacci {
 		int num0=0, num1=1, num2;
 
 		/*
-		 * Since the first two indices are constants, making the reference to those two
+		 * Since the first two indices are constants(0 & 1), making the reference to those two
 		 * values would fail to create a for loop that falls within the range of the
 		 * input value, so a third value is necessary to satisfy the condition.
 		 */

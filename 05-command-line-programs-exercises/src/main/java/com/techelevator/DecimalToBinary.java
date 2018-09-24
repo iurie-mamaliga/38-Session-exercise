@@ -31,19 +31,19 @@ public class DecimalToBinary {
 
 			int number = Integer.parseInt(yourNumbers[i]);
 
-			int consoleLength = 1; // Assigns the length of console to minimum 1 digit and it increases according
+			int binary = 1; // Assigns the length of binary number to minimum 1 digit and it increases according
 									// to the
 									// input value because of "for loop".
 
-			while (consoleLength <= number / 2) {
-				consoleLength = consoleLength * 2; // These two statements are the main converter.
+			while (binary <= number / 2) {
+				binary = binary * 2; // These two statements are the main converter.
 			}
 
-			while (consoleLength > 0) {
+			while (binary > 0) {
 
 				// To get 0 value of binary number
 
-				if (number < consoleLength) {
+				if (number < binary) {
 
 					System.out.print(0);
 				}
@@ -52,10 +52,10 @@ public class DecimalToBinary {
 
 				else {
 					System.out.print(1);
-					number = number - consoleLength;
+					number = number - binary;
 				}
 
-				consoleLength = consoleLength / 2; // Determines the length of console.
+				binary = binary / 2; // Determines the length of binary number.
 			}
 
 			System.out.println(); // Prints the result of different numbers in separate lines.
