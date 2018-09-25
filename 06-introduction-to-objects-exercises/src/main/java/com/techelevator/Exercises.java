@@ -370,18 +370,21 @@ public class Exercises {
 		
 		int count = 0;
 		
-		if(str.length() >= 2); {
+		if(str.length() >= 2) {
 		
 		String last = str.substring(str.length() - 2);
 		
 	    for(int i = 0; i< str.length()-2; i++) {
 	    	
-	        if(str.charAt(i) == last.charAt(0) && str.charAt(i+1) == last.charAt(1))
+	        if(str.charAt(i) == last.charAt(0) && str.charAt(i+1) == last.charAt(1)) {
+	        	
+	        
 	            count ++;
 	        }
+	    }
 		
-	    return count;
 		}
+		return count;
 	}
 		
 	
