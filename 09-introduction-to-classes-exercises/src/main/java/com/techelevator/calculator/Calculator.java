@@ -1,5 +1,7 @@
 package com.techelevator.calculator;
 
+import static org.junit.Assert.assertTrue;
+
 public class Calculator {
 
 	private int currentValue;
@@ -14,7 +16,8 @@ public class Calculator {
 		return(this.currentValue -= subtractend);
 	}
 	public int power( int exponent) { 
-		return ((int)Math.pow(this.currentValue, exponent));
+		return this.currentValue =  ((int)Math.pow(this.currentValue, exponent));
+		
 	
 	}
 	
