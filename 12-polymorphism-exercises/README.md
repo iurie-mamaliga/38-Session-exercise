@@ -57,7 +57,7 @@ Following the approach that the morning's examples has led, create a List that r
 
 *Sample Output*
 
-```
+
 Please enter the weight of the package? 15
 (P)ounds or (O)unces? O
 What distance will it be traveling to? 340
@@ -72,7 +72,7 @@ FexEd                           $20.00
 SPU (4-day ground)              $1.75
 SPU (2-day business)            $17.50
 SPU (next-day)                  $26.25
-```
+
 
 
 
@@ -123,7 +123,7 @@ Following the approach that the morning's examples has led, create a List that r
 
 *Sample Output*
 
-```
+
 
 Vehicle          Distance Traveled      Toll $
 ----------------------------------------------
@@ -132,4 +132,3 @@ Car              75                     $2.50
 Tank             240                    $0.00
 Truck            150                    $6.75
 
-```
