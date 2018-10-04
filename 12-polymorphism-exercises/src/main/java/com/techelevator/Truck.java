@@ -1,21 +1,24 @@
 package com.techelevator;
 
-public class Truck extends Vehicle implements Toll{
-	private int axel;
+public class Truck extends Automobile implements Vehicle{
+	private int axle;
 	
-	public Truck( ) {
-		super("Truck");
+	public Truck(String name, double distance ) {
+		super("Truck", distance);
 	}
 	
-	public double calculatedToll(double tollRate) {
-			if(axel <= 4) {
-				tollRate = distance * 0.040;
-			} else if( axel >=5 && axel <= 6) {
-				tollRate = distance * 0.045;
+	public double calculateToll(int axle) {
+			if(axle <= 4) {
+				rate = distance * 0.040;
+			} else if( axle >=5 && axle <= 6) {
+				rate = distance * 0.045;
 			} else {
-				tollRate = distance * 0.048;
+				rate = distance * 0.048;
 			}
-			return tollRate;
+			return rate;
+	}
+	public int getAxle() {
+		return axle;
 	}
 
 }

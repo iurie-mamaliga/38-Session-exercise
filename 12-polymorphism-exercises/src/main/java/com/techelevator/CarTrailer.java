@@ -1,15 +1,15 @@
 package com.techelevator;
 
-public class CarTrailer extends Vehicle implements Toll{
+public class CarTrailer extends Automobile implements Vehicle {
 	
-		public CarTrailer( ) {
-			super("Car wtih trailer");
+		public CarTrailer( String name, double distance) {
+			super("Car2", distance);
 		}
 		
-		public double calculatedToll(double tollRate) {
+		public double calculateToll(double tollRate) {
 				
-				tollRate = distance * 0.020 + 1.0;
-			return tollRate;
+				rate = distance * 0.020 + 1.0;
+			return rate;
 		}
 		
 	}

@@ -6,34 +6,36 @@ public class Postal {
 	protected double rate;
 	protected String service;
 	protected String name;
-	
+
 	public Postal(int distance, int weight) {
 		this.distance = distance;
-		this.weight = weight;;
+		this.weight = weight;
+		;
 	}
-	
-	
+
 	public double calculateRate() {
 		return rate;
-		
+
 	}
-	
+
+	public double getCalculateRate() {
+		return rate;
+	}
+
 	public String getName(String name) {
 		return name;
 	}
-	
+
 	public int getDistance() {
 		return distance;
 	}
 
 	public int getWeight() {
-		return weight;
+		return this.weight;
 	}
 
 	public double getRate() {
 		return rate;
 	}
-	
-	
 
 }
