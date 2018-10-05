@@ -17,9 +17,9 @@ public class Truck implements Vehicle {
 			if(axle <= 4) {
 				rate = distance * 0.040;
 			} else if(axle > 4 && axle <= 6) {
-				rate = distance * 0.45;
+				rate = distance * 0.045;
 			} else {
-				rate = distance * 0.48;
+				rate = distance * 0.048;
 			}
 			
 			return rate;

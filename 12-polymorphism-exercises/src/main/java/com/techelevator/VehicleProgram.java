@@ -22,7 +22,7 @@ public class VehicleProgram {
 	    double totalCost = 0.0;
 
 	    while (loopBreak == true) {
-	        System.out.print("\nPlease enter next vehicle type: (Car) (Truck) (Tank) (Done) ==> ");
+	        System.out.print("\nPlease enter next vehicle type: (Car) (Truck) (Tank) (Done) :  ");
 	        String payType = input.nextLine();
 
 	        if (payType.toUpperCase().equals("CAR")) {
