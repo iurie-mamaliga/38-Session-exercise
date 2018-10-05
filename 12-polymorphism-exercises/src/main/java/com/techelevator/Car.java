@@ -1,16 +1,26 @@
 package com.techelevator;
 
-public class Car extends Automobile implements Vehicle {
+public class Car implements Vehicle {
+	private int distance;
+	private double rate;
+	private boolean pullingTrailer;
 
-	public Car(String name, double distance) {
-		super("Car1", distance);
+	public Car(boolean pullingTrailer) {
+		this.pullingTrailer = pullingTrailer;
+	
 	}
 
-	public double calculatedToll() {
-
-		rate = distance * 0.020;
+	public double calculateToll(int distance) {
+		if(pullingTrailer == false) {
+			rate = distance * 0.020;
+		}else {
+			rate += 1;
+		}
 
 		return rate;
+	}
+	public String getName() {
+		return "Car            ";
 	}
 
 }

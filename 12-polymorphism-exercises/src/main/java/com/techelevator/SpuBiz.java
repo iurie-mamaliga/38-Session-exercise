@@ -1,14 +1,16 @@
 package com.techelevator;
 
-public class SpuBiz extends Postal implements DeliveryDriver {
+public class SpuBiz extends Spu implements DeliveryDriver {
+	
+	private double rate;
 
 	public SpuBiz(int distance, int weight) {
 		super(distance, weight);
 	}
 
-	@Override
-	public double calculateRate() {
-		return rate = (weight * 0.050) / 16 * distance;
+	public double calculateRate(int distance, int weight) {
+		rate = super.getSpuBizRate(distance, weight);
+		return rate;
 
 	}
 

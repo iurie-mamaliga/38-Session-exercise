@@ -1,15 +1,21 @@
 package com.techelevator;
 
-public class Tank extends Automobile implements Vehicle{
+public class Tank implements Vehicle{
 	
-	public Tank( String name, int distance) {
-		super("Tank", distance);
+	private int distance;
+	private double rate;
+	
+	public Tank() {
+		
 	}
 	
-	public double calculatedToll() {
+	public double calculateToll(int distance) {
 			
 			rate = 0.0;;
 		return rate;
+	}
+	public String getName() {
+		return "Tank           ";
 	}
 
 }
