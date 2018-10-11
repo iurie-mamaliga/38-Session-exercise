@@ -7,7 +7,7 @@ public class KataFizzBuzzTest {
 	
 	@Test
 	public void lower_bound_invalid_test() {
-		for(int i = -1000000; i <= 0; i++) {
+		for(int i = -100000; i <= 0; i++) {
 			String result = KataFizzBuzz.fizzyBuzzy(i);
 			Assert.assertEquals("", result);
 		}
@@ -16,7 +16,7 @@ public class KataFizzBuzzTest {
 	
 	@Test
 	public void upper_bound_invalid_test() {
-		for(int i = 101; i >= 1000000; i++) {
+		for(int i = 101; i >= 10000; i++) {
 			String result = KataFizzBuzz.fizzyBuzzy(i);
 			Assert.assertEquals("", result);
 		}

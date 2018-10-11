@@ -1,2 +1,5 @@
-What color is the sky?|yellow|blue*|green|red
-A skeleton walks into a bar, and says to the bartender, "Give me a beer and a ..."|hair brush|dry erase marker|mop*|yo-yo
+1. What color is the sky? |yellow | blue* | green | red
+2. A skeleton walks into a bar, and says to the bartender, "Give me a beer and a ..." | hair brush | dry erase marker | mop* | yo-yo.
+3. What are Cleveland's odds of winning a championship? | Not likely* | Highly likely | Fat chance| Who cares??
+4. What is the capital city of Pennsylvania? | Pittsburgh | Harrisburgh* | Philadelphia | Lancaster.
+5. What is the capital of USA? | New York | Washington | Los Angeles | Washington Dc*
