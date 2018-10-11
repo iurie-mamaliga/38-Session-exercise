@@ -31,6 +31,7 @@ public class QuizMaker {
 			Scanner userInput = new Scanner(System.in);
 			System.out.println(quiz[i].questions);
 			String answer = userInput.nextLine();
+			
 			if (answer.equals(quiz[i].answer)) {
 				score++;
 				System.out.println("That is correct");
