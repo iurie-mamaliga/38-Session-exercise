@@ -16,7 +16,7 @@ public class FizzWriter {
 		Integer intInstance = new Integer(number);
 		String value = intInstance.toString();
 
-		if (number <= 0 || number >= 101) {
+		if (number <= 0 || number >= 301) {
 			return "";
 		} else if ((number % 3 == 0 && number % 5 == 0) || (value.contains("3") && value.contains("5"))) {
 			return "FizzBuzz";
