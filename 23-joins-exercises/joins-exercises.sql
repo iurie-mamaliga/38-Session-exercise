@@ -257,6 +257,7 @@ LIMIT 5
 -- 19. The top 10 actors ranked by number of rentals of films starring that actor 
 -- (#1 should be “GINA DEGENERES” with 753 rentals and #10 should be “SEAN GUINESS” with 599 rentals)
 
+S
 SELECT actor.first_name || ' ' || actor.last_name AS actor, count(*) AS rental_count
 FROM actor
 JOIN film_actor
@@ -267,7 +268,7 @@ JOIN inventory
 ON (inventory.film_id = film.film_id)
 JOIN rental
 ON (rental.inventory_id = inventory.inventory_id)
-GROUP BY actor.first_name, actor,last_name
+GROUP BY actor.actor_id, actor.first_name, actor,last_name
 ORDER BY rental_count DESC
 LIMIT 10
 ;
