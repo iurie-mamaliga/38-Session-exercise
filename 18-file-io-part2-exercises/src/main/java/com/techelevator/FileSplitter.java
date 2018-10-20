@@ -9,7 +9,7 @@ public class FileSplitter {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		args = new String[] {"index.txt", "100"};
+		args = new String[] {"Users/tekrimal/exercises/17-file-io-part1-exercises/alices_adventures_in_wonderland.txt\n" +  "100"};
 		
 		File masterFile = new File(args[0]);
 		
