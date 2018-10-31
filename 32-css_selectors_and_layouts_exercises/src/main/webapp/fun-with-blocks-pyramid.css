@@ -1,0 +1,53 @@
+html {
+	font: 96px Courier;
+	color: #ffffff;
+}
+
+.box {
+	padding: 50px;
+	padding-left: 50px;
+	width: 60px;
+	margin: 0px;
+}
+
+#box_0 {
+	margin-left: 480px;
+}
+
+#box_1 {
+	display : inline-block;	
+	margin-left: 400px;
+	
+
+}
+
+#box_1, #box_2 {
+	float: left;
+}
+
+#box_3 {
+	display: inline-block;
+	margin-left: 320px;
+}
+
+#box_3, #box_4, #box_5 {
+	float: left;
+}
+
+#box_6 {
+
+	display: inline-block;
+	margin-left: 240px;
+}
+
+#box_6, #box_7, #box_8, #box_9 {
+	float: left;
+}
+
+.even {
+	background-color: #48accc;
+}
+
+.odd {
+	background-color: #e1025f;
+}

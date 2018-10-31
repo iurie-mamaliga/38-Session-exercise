@@ -1,0 +1,38 @@
+html {
+	font: 96px Courier;
+	color: #ffffff;
+}
+
+.box {
+	padding: 50px;
+	padding-left: 50px;
+	width: 60px;
+	margin: 0;
+}
+.even {
+	background-color: #48accc;
+}
+
+.odd {
+	background-color: #e1025f;
+}
+
+#box_1, #box_8 {
+	position: relative;
+	left: 160px;
+}
+
+#box_2, #box_7 {
+	position: relative;
+	left: 320px;
+}
+
+#box_3, #box_6 {
+	position: relative;
+	left: 480px;
+}
+
+#box_4, #box_5 {
+	position: relative;
+	left: 640px;
+}

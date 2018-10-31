@@ -1,0 +1,19 @@
+html {
+	font: 96px Courier;
+	color: #ffffff;
+}
+
+.box {
+	padding: 50px;
+	padding-left: 50px;
+	width: 60px;
+	margin: 0;
+}
+
+.even {
+	background-color: #48accc;
+}
+
+.odd {
+	background-color: #e1025f;
+}
