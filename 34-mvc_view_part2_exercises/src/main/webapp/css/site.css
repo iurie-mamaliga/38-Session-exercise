@@ -87,11 +87,10 @@ tr.gray > th {
 
 }
 .flexContainer {
-	
 	width: 100%;
+	flex-wrap: wrap;;
 	display: flex;
-	
-	
+
 }
 
 .flexContainerTile{
@@ -100,6 +99,7 @@ tr.gray > th {
 }
 .flexContainerTextTiles{
 	width: 60%;
+	
 	
 }
 
@@ -113,6 +113,7 @@ tr.gray > th {
 	display: flex;
 	justify-content: space-between;
 	align-self: flex-end;
+	text-align: center;
 }
 
 .flexContainerName {
@@ -146,6 +147,7 @@ tr.gray > th {
 	font-size: 20px;
 	text-decoration: none;
 	color: black;
+	text-align: center;
 }
 .containerList {
 	display: flex;
@@ -154,7 +156,7 @@ tr.gray > th {
 .containerListPics {
 	display: block;
 	height: 100%;
-	width: 30%;
+	width: 33.3%;
 }
 .containerListInfo {
 	display: block;
@@ -180,4 +182,7 @@ tr.gray > th {
 }
 .textDetails {
 	text-align: left;
+}
+div {
+    display: block;
 }
