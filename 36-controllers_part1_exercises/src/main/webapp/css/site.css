@@ -16,5 +16,42 @@ textarea {
     max-width: 280px;
 }
 
+.formInputGroup {
+	font-size: 40px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: left;
+  width: 20%;
+  padding: 4px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+#submit {
+ 
+  border-radius: 4px;
+  font-size: 1em;
+  height: 30px;
+  width: 96px;
+  margin: 10px;
+  border: 1px solid;
+}
+.dropdown {
+
+  display: inline-block;
+  width: 20%;
+  padding: 4px;
+  vertical-align: top;
+  margin-top: 7px;
+}
+#flexible {
+	display: flex;
+}
+#apart {
+	margin-left: 30px;
+}
+
+
 
 

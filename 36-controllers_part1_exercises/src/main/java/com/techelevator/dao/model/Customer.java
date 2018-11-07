@@ -9,6 +9,17 @@ public class Customer {
     private String lastName;
     private String email;
     private boolean active;
+    
+    public Customer(){
+    	
+    }
+    
+    public Customer(String firstName, String lastName, String email, Boolean active) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.active = active;
+    }
 	/**
 	 * @return the firstName
 	 */
