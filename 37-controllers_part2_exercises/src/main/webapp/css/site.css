@@ -1,0 +1,111 @@
+body {
+	padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #86A494;
+    height: 100%;
+    text-decoration: none;
+    text-decoration-color: black;
+    
+   
+}
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.banner img {
+	align: center;
+	height: 140px;
+	width: 1000px;
+	 display: block;
+ 	 margin: 0 auto;
+	
+}
+.centered {
+	text-align: center;
+}
+#heading {
+	display: flex;
+	border: 1px;
+	list-style-type: none;
+	text-decoration: none;
+}
+#head {
+	padding: 20px;
+	font-size: 20px;
+	text-color: black;
+	text-decoration: none;
+}
+#head a {
+	text-color: black;
+	text-decoration: none;
+}
+section {
+	background-color: white;
+	margin: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 4px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+  
+}
+
+.input-field {
+  height: 20px;
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+  border: 3px light gray;
+  border-radius: 2px;
+}
+
+#submit {
+  background-color: #3498DB;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+  align: center;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  #head a:hover {
+  color: red;
+  }
+
