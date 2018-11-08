@@ -8,7 +8,7 @@
 	<img src= "img/forDummies.png"/>
 	<h2><strong>Reviews for Squirrel Cigar Party For Dummies</strong></h2>
 	<c:url var="newReviewUrl" value="/newReview"/>
-	<span class="centered"> <a href="${newReviewUrl }">Leave a Review</a></span>
+	<span class="centered"> <a href="${newReviewUrl }" ><img src= "img/cigar.png"/></a></span>
 		<ul>
 		<c:forEach items="${allReviews }" var="review">
 			

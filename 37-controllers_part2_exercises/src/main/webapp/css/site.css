@@ -26,7 +26,9 @@ textarea {
 	
 }
 .centered {
+	display: block;
 	text-align: center;
+	
 }
 #heading {
 	display: flex;
@@ -107,5 +109,11 @@ section {
   }
   #head a:hover {
   color: red;
+  }
+  #reviewTag {
+  text-align: center;
+  font-size: 16px;
+  color: red;
+  text-decoration: none;
   }
 
