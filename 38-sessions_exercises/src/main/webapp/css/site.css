@@ -1,0 +1,86 @@
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-image: linear-gradient(to bottom right, DarkOliveGreen, DarkSeaGreen,
+		DarkSlateGrey, Gainsboro, GhostWhite, Khaki);
+	height: 100%;
+	text-decoration: none;
+	text-decoration-color: black;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+}
+
+.banner img {
+	align: center;
+	height: 140px;
+	width: 1000px;
+	display: block;
+	margin: 0 auto;
+}
+
+#heading {
+	text-align: center;
+	font-size: 64px;
+	font-family: amarnath, verdana;
+	width: 400px;
+	width: 900px;
+}
+
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+input, select, textarea {
+	max-width: 280px;
+}
+
+.boxed {
+	margin: 20px;
+	border: 1px solid black;
+	width: 600px;
+	height: 350px;
+	text-align: center;
+	background-image:
+		url("/Users/tekrimal/exercises/38-sessions_exercises/src/main/webapp/img/image-01.jpg");
+	background-size: cover;
+}
+
+#question {
+	text-align: left;
+	margin: 30px;
+}
+
+.radio {
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+	margin-left: 10px;
+}
+
+#result {
+	text-align: center;
+	text-weight: bold;
+}
+
+#table {
+	margin: 30px;
+}
+
+#heading {
+	display: flex;
+	border: 1px;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.centered {
+	display: block;
+	text-align: center;
+}
+
+#joke {
+	margin-left: 30px;
+	font-size: 18px;
+}
